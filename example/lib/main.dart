@@ -1,14 +1,18 @@
+import 'dart:developer';
 import 'dart:io';
+
 import 'package:dio/adapter.dart';
-import 'package:flutter/material.dart';
 import 'package:dio/dio.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_system_proxy/flutter_system_proxy.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -16,13 +20,16 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key? key, required this.title}) : super(key: key);
+  const MyHomePage({
+    required this.title,
+    Key? key,
+  }) : super(key: key);
 
   final String title;
 
@@ -32,7 +39,8 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
-  String _res = "Response";
+
+  String _res = 'Response';
   void _incrementCounter() {
     fetchLocalHost().then((value) {
       setState(() {
@@ -52,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
+            const Text(
               'You have pushed the button this many times:',
             ),
             Text(
@@ -69,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
     );
   }
@@ -77,19 +85,18 @@ class _MyHomePageState extends State<MyHomePage> {
 
 Future<String> fetchLocalHost() async {
   try {
-    var dio = new Dio();
-    var url = 'http://ip-api.com/json';
-    var proxy = await FlutterSystemProxy.findProxyFromEnvironment(url);
-    (dio.httpClientAdapter as DefaultHttpClientAdapter).onHttpClientCreate =
-        (HttpClient client) {
+    final dio = Dio();
+    const url = 'http://ip-api.com/json';
+    final proxy = await FlutterSystemProxy.findProxyFromEnvironment(url);
+    (dio.httpClientAdapter as DefaultHttpClientAdapter).onHttpClientCreate = (HttpClient client) {
       client.findProxy = (uri) {
         return proxy;
       };
     };
-    var response = await dio.get(url);
+    final response = await dio.get(url);
     return response.toString();
   } catch (e) {
-    print(e);
-    return "Error";
+    log(e.toString());
+    return 'Error';
   }
 }

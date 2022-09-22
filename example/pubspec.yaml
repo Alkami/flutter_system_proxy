@@ -6,9 +6,11 @@ description: Demonstrates how to use the flutter_system_proxy plugin.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=2.15.0 <3.0.0"
 
 dependencies:
+  cupertino_icons: ^1.0.2
+  dio: ^4.0.0
   flutter:
     sdk: flutter
 
@@ -22,10 +24,11 @@ dependencies:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.2
-  dio: ^4.0.0
 
 dev_dependencies:
+  alkami_dart_analysis:
+    hosted: https://dart.cloudsmith.io/alkami/fluttercore/
+    version: ^1.0.0
   flutter_test:
     sdk: flutter
 
