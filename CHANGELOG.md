@@ -1,3 +1,7 @@
+# 1.1.0
+
+- test automate publishing
+
 # 1.0.0
 
 - Merge pull request #7 from Rushabhshroff/develop
