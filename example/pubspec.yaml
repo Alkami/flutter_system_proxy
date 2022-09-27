@@ -27,7 +27,7 @@ dependencies:
 
 dev_dependencies:
   alkami_dart_analysis:
-    hosted: https://dart.cloudsmith.io/alkami/fluttercore/
+    hosted: https://dart.cloudsmith.io/alkami/flutter/
     version: ^1.0.0
   flutter_test:
     sdk: flutter

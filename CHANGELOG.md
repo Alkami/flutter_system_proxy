@@ -1,3 +1,11 @@
+# 1.3.0
+
+- chore:DEV-139004 publish to cloudsmith (micaiah 2)
+
+# 1.2.0
+
+- chore:DEV-139004 publish to cloudsmith (micaiah 2)
+
 # 1.1.0
 
 - test automate publishing
