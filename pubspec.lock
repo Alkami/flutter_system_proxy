@@ -12,7 +12,7 @@ packages:
     dependency: "direct dev"
     description:
       name: alkami_dart_analysis
-      url: "https://dart.cloudsmith.io/alkami/fluttercore/"
+      url: "https://dart.cloudsmith.io/alkami/flutter/"
     source: hosted
     version: "1.1.0"
   analyzer:
@@ -267,9 +267,9 @@ packages:
     dependency: "direct dev"
     description:
       name: mplat_pr_tools
-      url: "https://dart.cloudsmith.io/alkami/flutterpackages/"
+      url: "https://dart.cloudsmith.io/alkami/flutter/"
     source: hosted
-    version: "1.14.0"
+    version: "1.16.0"
   package_config:
     dependency: transitive
     description:
