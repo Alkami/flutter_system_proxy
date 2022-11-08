@@ -1,1 +1,1 @@
-include: package:alkami_dart_analysis/alkami_analysis_options.yaml
+include: package:alkami_dart_analysis/analysis_options.yaml
