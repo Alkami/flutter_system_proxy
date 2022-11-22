@@ -2,7 +2,8 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:developer';
 import 'dart:io';
-import 'package:flutter/services.dart';
+
+import 'package:alkami_core_dependencies/alkami_core_dependencies.dart';
 
 // ignore: avoid_classes_with_only_static_members
 class FlutterSystemProxy {

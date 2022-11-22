@@ -2,25 +2,29 @@ name: flutter_system_proxy
 description: A Flutter Plugin to detect System proxy. When using HTTP client that are not proxy aware this plugin can help with finding the proxy from system settings which then can be used with HTTP Client to make a successful request.
 homepage: https://github.com/Rushabhshroff/flutter_system_proxy.git
 publish_to: https://dart.cloudsmith.io/alkami/flutter/
-version: 1.3.0 #Original version when cloned was 0.0.2
+version: 2.2.0 #Original version when cloned was 0.0.2
 
 environment:
   sdk: ">=2.15.0 <3.0.0"
   flutter: ">=1.20.0"
 
 dependencies:
-  flutter:
-    sdk: flutter
+  alkami_core_dependencies: 
+    hosted: https://dart.cloudsmith.io/alkami/flutter/
+    version: ^2.1.0
 
 dev_dependencies:
-  alkami_dart_analysis:
+  alkami_core_dev_dependencies: 
     hosted: https://dart.cloudsmith.io/alkami/flutter/
-    version: ^1.0.0
-  flutter_test:
-    sdk: flutter
-  mplat_pr_tools:
+    version: ^2.1.0
+
+  alkami_dart_analysis: 
     hosted: https://dart.cloudsmith.io/alkami/flutter/
-    version: ^1.0.0
+    version: ^3.2.0
+
+  mplat_pr_tools: 
+    hosted: https://dart.cloudsmith.io/alkami/flutter/
+    version: ^2.1.0
 
 flutter:
   plugin:
