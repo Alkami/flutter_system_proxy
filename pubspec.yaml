@@ -11,7 +11,7 @@ environment:
 dependencies:
   alkami_core_dependencies: 
     hosted: https://dart.cloudsmith.io/alkami/flutter/
-    version: ^3.0.0
+    version: ^3.2.2
 
   flutter:
     sdk: flutter
