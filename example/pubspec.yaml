@@ -6,12 +6,13 @@ description: Demonstrates how to use the flutter_system_proxy plugin.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
 environment:
-  sdk: ">=2.15.0 <3.0.0"
+  sdk: ">=2.18.0 <3.0.0"
+  flutter: ">=3.3.0"
 
 dependencies:
   alkami_core_dependencies: 
     hosted: https://dart.cloudsmith.io/alkami/flutter/
-    version: ^2.1.0
+    version: ^3.2.2
 
   dio: ^4.0.0
   flutter:
@@ -31,11 +32,11 @@ dependencies:
 dev_dependencies:
   alkami_core_dev_dependencies: 
     hosted: https://dart.cloudsmith.io/alkami/flutter/
-    version: ^2.1.0
+    version: ^3.0.0
 
   alkami_dart_analysis: 
     hosted: https://dart.cloudsmith.io/alkami/flutter/
-    version: ^3.2.0
+    version: ^4.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

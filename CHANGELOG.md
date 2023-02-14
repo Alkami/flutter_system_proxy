@@ -1,3 +1,7 @@
+# 3.1.0
+
+- Upgrade to Flutter 3
+
 # 1.3.0
 
 - chore:DEV-139004 publish to cloudsmith (micaiah 2)
