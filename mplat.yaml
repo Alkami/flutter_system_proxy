@@ -1,0 +1,5 @@
+validate-pr:
+  test: true
+
+test:
+  min-coverage: 0.0
