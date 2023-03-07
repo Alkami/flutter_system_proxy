@@ -12,3 +12,4 @@ build/
 **/*.settings
 **/*.project
 **/*.classpath
+pubspec.lock
