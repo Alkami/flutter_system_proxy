@@ -1,3 +1,7 @@
+# 3.5.0
+
+- enh: DEV-147361 auto publish hotfix branches
+
 # 3.3.0
 
 - chore:DEV-151337 rename mplat_dart to mplat
