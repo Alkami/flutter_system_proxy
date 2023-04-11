@@ -1,3 +1,7 @@
+# 3.7.0
+
+- enh: DEV-152053 Dynamically write/remove pubspec_overrides.yaml
+
 # 3.6.0
 
 - chore: DEV-147361 update jira link worflow

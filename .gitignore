@@ -7,6 +7,7 @@ test/generated_coverage_helper_test.dart
 
 .packages
 .pub/
+pubspec_overrides.yaml
 
 build/
 **/*.settings
