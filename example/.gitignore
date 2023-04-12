@@ -30,6 +30,7 @@ pubspec.lock
 .packages
 .pub-cache/
 .pub/
+pubspec_overrides.yaml
 /build/
 
 # Web related
