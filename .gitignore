@@ -14,3 +14,5 @@ build/
 **/*.project
 **/*.classpath
 pubspec.lock
+
+.idea/
