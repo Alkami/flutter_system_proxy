@@ -1,3 +1,7 @@
+# 3.9.0
+
+- enh: DEV-154830 update gradle and kotlin
+
 # 3.8.0
 
 - enh: DEV-153701 enhancements to Android Studio experience
