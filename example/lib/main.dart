@@ -3,9 +3,9 @@
 import 'dart:developer';
 import 'dart:io';
 
-import 'package:alkami_core_dependencies/alkami_core_dependencies.dart';
 import 'package:dio/adapter.dart';
 import 'package:dio/dio.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_system_proxy/flutter_system_proxy.dart';
 
 void main() {
@@ -43,6 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
   String _res = 'Response';
+
   void _incrementCounter() {
     fetchLocalHost().then((value) {
       setState(() {
