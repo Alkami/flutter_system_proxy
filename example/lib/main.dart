@@ -101,6 +101,6 @@ Future<String> fetchLocalHost() async {
     return response.toString();
   } catch (e) {
     log(e.toString());
-    return 'Error';
+    return e.toString();
   }
 }
