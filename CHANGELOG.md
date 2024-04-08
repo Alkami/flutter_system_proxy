@@ -1,3 +1,7 @@
+# 3.15.0
+
+- feat(github):DEV-172432 Add PR template to repo (#18)
+
 # 3.14.0
 
 - chore(pr):DEV-157162 add required PR reviewers (#17)
