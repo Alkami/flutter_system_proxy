@@ -5,8 +5,8 @@ publish_to: https://dart.cloudsmith.io/alkami/flutter/
 version: 3.16.0 #Original version when cloned was 0.1.2
 
 environment:
-  sdk: ">=2.18.0 <3.0.0"
-  flutter: ">=3.3.0"
+  sdk: ">=3.3.4 <4.0.0"
+  flutter: ">=3.19.6"
 
 dependencies:
   flutter:

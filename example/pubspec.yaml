@@ -6,11 +6,11 @@ description: Demonstrates how to use the flutter_system_proxy plugin.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
 environment:
-  sdk: ">=2.18.0 <3.0.0"
-  flutter: ">=3.3.0"
+  sdk: ">=3.3.4 <4.0.0"
+  flutter: ">=3.19.6"
 
 dependencies:
-  dio: ^4.0.0
+  dio: ^5.4.2+1
 
   flutter:
     sdk: flutter

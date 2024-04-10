@@ -5,15 +5,17 @@ void main() {
   const MethodChannel channel = MethodChannel('flutter_system_proxy');
 
   TestWidgetsFlutterBinding.ensureInitialized();
+  final defaultMessenger = TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger;
 
   setUp(() {
-    channel.setMockMethodCallHandler((MethodCall methodCall) async {
+    defaultMessenger.setMockMethodCallHandler(channel,
+        (MethodCall methodCall) async {
       return '42';
     });
   });
 
   tearDown(() {
-    channel.setMockMethodCallHandler(null);
+    defaultMessenger.setMockMethodCallHandler(channel, null);
   });
 
   test('getSystemProxy', () async {});
