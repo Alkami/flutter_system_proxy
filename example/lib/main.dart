@@ -1,6 +1,6 @@
 // ignore_for_file: library_private_types_in_public_api
 
-import 'dart:developer';
+import 'dart:async';
 import 'dart:io';
 
 import 'package:dio/adapter.dart';
@@ -45,10 +45,12 @@ class _MyHomePageState extends State<MyHomePage> {
   String _res = 'Response';
 
   void _incrementCounter() {
+    setState(() {
+        _counter++;
+      });
     fetchLocalHost().then((value) {
       setState(() {
-        _counter++;
-        _res = value;
+        _res = value.toString();
       });
     });
   }
@@ -87,11 +89,11 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 Future<String> fetchLocalHost() async {
-  try {
     final dio = Dio();
     const url = 'http://ip-api.com/json';
-    final proxy = await FlutterSystemProxy.findProxyFromEnvironment(url);
-    (dio.httpClientAdapter as DefaultHttpClientAdapter).onHttpClientCreate = (HttpClient client) {
+    final proxy = await FlutterSystemProxy().findProxyFromEnvironment(url);
+    (dio.httpClientAdapter as DefaultHttpClientAdapter).onHttpClientCreate =
+        (HttpClient client) {
       client.findProxy = (uri) {
         return proxy;
       };
@@ -99,8 +101,4 @@ Future<String> fetchLocalHost() async {
     };
     final response = await dio.get(url);
     return response.toString();
-  } catch (e) {
-    log(e.toString());
-    return 'Error';
-  }
 }
