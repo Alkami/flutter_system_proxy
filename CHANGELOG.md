@@ -1,3 +1,7 @@
+# 3.16.0
+
+- feat(proxy):DEV-159507 update flutter system proxy to 0.1.2 (#20)
+
 # 3.15.0
 
 - feat(github):DEV-172432 Add PR template to repo (#18)
