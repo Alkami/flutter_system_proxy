@@ -1,3 +1,7 @@
+# 3.17.0
+
+- chore(gradle):DEV-174002 Upgrade to latest Gradle (version 8.6, dependency version 8.4.1) (#21)
+
 # 3.16.0
 
 - feat(proxy):DEV-159507 update flutter system proxy to 0.1.2 (#20)
