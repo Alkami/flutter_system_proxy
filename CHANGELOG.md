@@ -1,3 +1,7 @@
+# 3.18.0
+
+- chore(Android tartgetSDK):DEV-172422 upgrade targetSDK to 34 (#22)
+
 # 3.17.0
 
 - chore(gradle):DEV-174002 Upgrade to latest Gradle (version 8.6, dependency version 8.4.1) (#21)
