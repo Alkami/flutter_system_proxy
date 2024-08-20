@@ -1,3 +1,7 @@
+# 3.19.0
+
+- enh(gh_actions):DEV-1234 Create hotfix branch on app-foundation release branch (#23)
+
 # 3.18.0
 
 - chore(Android tartgetSDK):DEV-172422 upgrade targetSDK to 34 (#22)
