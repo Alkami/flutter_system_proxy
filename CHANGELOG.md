@@ -1,3 +1,7 @@
+# 3.20.0
+
+- chore(AGP):DEV-171033 downgrade AGP to 8.3.2 (#24)
+
 # 3.19.0
 
 - enh(gh_actions):DEV-1234 Create hotfix branch on app-foundation release branch (#23)
