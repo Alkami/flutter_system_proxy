@@ -1,3 +1,9 @@
+# 3.21.0
+
+- feat(upgrade):DEV-174541 Merge flutter_system_proxy upstream version 0.1.4 for Xcode 16 compatibility (#26)
+
+Co-authored-by: Terry Torres <terrytorres@gmail.com>
+
 # 3.20.0
 
 - chore(AGP):DEV-171033 downgrade AGP to 8.3.2 (#24)
