@@ -1,3 +1,7 @@
+# 3.22.0
+
+- chore(targetSDK):DEV-191366 update target SDK to 35 (#27)
+
 # 3.21.0
 
 - feat(upgrade):DEV-174541 Merge flutter_system_proxy upstream version 0.1.4 for Xcode 16 compatibility (#26)
