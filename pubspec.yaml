@@ -5,7 +5,7 @@ publish_to: https://dart.cloudsmith.io/alkami/flutter/
 version: 3.22.0  # Upstream version for this update was 0.1.5
 
 environment:
-  sdk: ">=2.18.0 <3.0.0"
+  sdk: ">=3.3.4 <4.0.0"
   flutter: ">=3.24.5"
 
 dependencies:
