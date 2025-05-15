@@ -1,3 +1,9 @@
+# 3.23.0
+
+- enh(upgrade):DEV-199981 Upgraded flutter to 3.29.3 (#29)
+
+Co-authored-by: alkami-laxmikant-kumbharkar <laxmikant.kumbharkar@alkami.com>
+
 # 3.22.0
 
 - chore(targetSDK):DEV-191366 update target SDK to 35 (#27)
